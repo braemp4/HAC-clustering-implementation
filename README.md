@@ -305,9 +305,6 @@ for i in range(len(clustering)):
 sample_of_sol_df["cluster"] = [label_dict[i] for i in range(len(sample_of_sol_df.index))]
 ```
 
-    /tmp/ipykernel_43375/3851436865.py:9: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
-      sample_of_sol_df["cluster"] = [label_dict[i] for i in range(len(sample_of_sol_df.index))]
-
 
 
 ```python
@@ -419,14 +416,6 @@ for clustering in clusterings:
 
 ```
 
-    /tmp/ipykernel_43375/4142922626.py:13: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
-      sol_df_temp["cluster"] = clustering
-
-
-    /home/braemp4/code/2026CHM4390Assignment_3/venv/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:3824: RuntimeWarning: Mean of empty slice
-      return _methods._mean(a, axis=axis, dtype=dtype,
-    /home/braemp4/code/2026CHM4390Assignment_3/venv/lib/python3.14/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
-      ret = ret.dtype.type(ret / rcount)
 
 
 
