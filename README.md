@@ -2,7 +2,7 @@
 
 **Unsupervised Hierarchical clustering using the HAC algorithm**
 
-The goal is to cluster a dataset of small molecules using unsupervised learning. To do this, I made a class that implements a basic HAC algorithm. This algorithm involves: standardizing a each feature column of our data (I used the sklearn standard scaler), initialzing treating each sample (or row) as its own cluster, joining the closest two clusters together as a superset. This strategy is repeated until all points have been aggregated into a single cluster, or in practice until we have $n$ clusters. 
+The goal is to cluster a dataset of small molecules using unsupervised learning. To do this, I made a class that implements a basic HAC algorithm. This algorithm involves: standardizing a each feature column of our data (I used the sklearn standard scaler), initialzing treating each sample (or row) as its own cluster, joining the closest two clusters together as a superset. This strategy is repeated until all points have been aggregated into a single cluster, or in practice until we have n clusters. 
 
 Some more details of my implementation:
 - I used a class to mimic the sklearn style API used by most python based machine learning implementations
